@@ -1,0 +1,14 @@
+.sub-footer-section {
+  background: #e5f8feb5;
+  /* height: 60vh; */
+  padding: 3rem 0;
+}
+
+.subfooter-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.subfooter-content-lower img {
+    width: 100%;
+}

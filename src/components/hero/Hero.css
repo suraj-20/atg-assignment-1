@@ -1,0 +1,18 @@
+.main-section {
+  height: 90vh;
+  background: #e5f8feb5;
+}
+
+.hero-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-container {
+  width: 90%;
+}
+
+.objects {
+  position: relative;
+  top: 50px;
+}
