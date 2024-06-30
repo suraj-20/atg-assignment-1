@@ -6,19 +6,34 @@ const Navbar = () => {
     <header className="header-container d-flex justify-content-between align-items-center py-4 m-auto">
       <div className="logo d-flex align-items-center gap-5">
         <img src={logo} alt="" height={40} />
-        <div className="search-bar">
+        <div className="search-bar d-flex align-items-center">
           <input
             type="text"
-            className="form-control"
+            className="input-bar"
             placeholder="Search here..."
           />
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
 
-      <div className="sign-in d-flex align-items-center gap-4">
+      <div className="sign-in d-flex align-items-center gap-5">
         <div className="explore-hobies-btn d-flex gap-4">
-          <button type="submit">Explore</button>
-          <button type="submit">Hobbies</button>
+          <button
+            className="btn btn-secondary d-flex gap-2 align-items-center"
+            type="submit"
+          >
+            <i class="fa-solid fa-compass"></i>
+            Explore
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button
+            className="btn btn-secondary d-flex gap-2 align-items-center"
+            type="submit"
+          >
+            <i class="fa-solid fa-circle-play"></i>
+            Hobbies
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
         </div>
         <div className="nav-icons d-flex align-items-center gap-4">
           <i class="fa-solid fa-bookmark"></i>
@@ -26,7 +41,9 @@ const Navbar = () => {
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
         <div className="sign-in-btn">
-          <button type="submit">Sign In</button>
+          <button className="btn btn-primary" type="submit">
+            Sign In
+          </button>
         </div>
       </div>
     </header>

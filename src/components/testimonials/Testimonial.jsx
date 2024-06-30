@@ -8,7 +8,13 @@ const Testimonial = () => {
       <div className="card-container">
         <div className="card testimonial-card">
           <div className="card-body d-flex flex-column gap-1 justify-content-between">
-            <h4 className="card-title">Testimonials</h4>
+            <h4 className="card-title d-flex gap-3 align-items-center">
+              <i
+                style={{ color: "#8064a2" }}
+                class="fa-solid fa-circle-user"
+              ></i>{" "}
+              Testimonials
+            </h4>
             <p className="card-text">
               In a fast growing and ever changing city like Bangalore, it
               sometimes becomes very difficult to find or connect with like
@@ -23,8 +29,18 @@ const Testimonial = () => {
               and I highly recommend it.
             </p>
             <div className="testimonial-content-img d-flex justify-content-between align-items-center">
-              <img className="testimonial-img1" src={image1} alt="" height={90} />
-              <img className="testimonial-img2" src={image2} alt="" height={90} />
+              <img
+                className="testimonial-img1"
+                src={image1}
+                alt=""
+                height={90}
+              />
+              <img
+                className="testimonial-img2"
+                src={image2}
+                alt=""
+                height={90}
+              />
             </div>
           </div>
         </div>

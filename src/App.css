@@ -10,3 +10,56 @@ body {
 .container {
   width: 95% !important;
 }
+
+.text-secondary {
+  color: #8064a2 !important;
+  color: rgba(86, 192, 218, 0.84);
+}
+
+.btn-primary {
+  background: #fff;
+  border: 1px solid #8064a2;
+  color: #8064a2;
+  padding: 6px 25px;
+}
+
+.btn-primary:hover {
+  background: #8064a2;
+  color: #fff;
+}
+
+.nav-icons i {
+  color: #8064a2;
+  font-size: 1.2rem;
+}
+
+.nav-icons i:hover {
+  color: #8064a29e;
+}
+
+.btn-secondary {
+  border: none;
+  background: #fff;
+  color: #8064a2;
+  font-size: 1.1rem;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  color: #8064a29e;
+}
+
+.input-bar {
+  padding: 6px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.148);
+  width: 100%;
+  outline: none;
+}
+
+.search-bar i {
+  background: #8064a2;
+  padding: 10px;
+  color: #fff;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}

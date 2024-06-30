@@ -12,7 +12,13 @@ const Subfooter = () => {
               Your <span className="text-primary">hobby</span> Your{" "}
               <span className="text-secondary">community...</span>
             </h2>
-            <button style={{width: "180px"}} type="submit">Get Started</button>
+            <button
+              style={{ width: "180px", background: "#8064a2", color: "#fff" }}
+              className="btn btn-secondary"
+              type="submit"
+            >
+              Get Started
+            </button>
           </div>
         </div>
         <div className="subfooter-content-lower">

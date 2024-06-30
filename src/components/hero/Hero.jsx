@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import object1 from "../../assets/OBJECTS (1).png";
 import object2 from "../../assets/OBJECTS.png";
+import AuthForm from "../auth-form/AuthForm";
 
 const Hero = () => {
   return (
@@ -37,57 +38,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="login-section col-md-4">
-          <h4 className="mb-3">Sign In</h4>
-          <button className="btn btn-outline-primary mb-2 w-100">
-            Continue with Google
-          </button>
-          <button className="btn btn-outline-primary mb-2 w-100">
-            Continue with Facebook
-          </button>
-          <div className="d-flex align-items-center my-3">
-            <hr className="flex-grow-1" />
-            <span className="px-2">Or connect with</span>
-            <hr className="flex-grow-1" />
-          </div>
-          <form>
-            <div className="mb-3">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email"
-              />
-            </div>
-            <div className="mb-3 position-relative">
-              <input
-                type="password"
-                className="form-control"
-                placeholder="Password"
-              />
-              <span className="position-absolute top-50 end-0 translate-middle-y me-3">
-                <i className="bi bi-eye-slash"></i> {/* Add Bootstrap Icons */}
-              </span>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <input
-                  type="checkbox"
-                  className="form-check-input me-2"
-                  id="rememberMe"
-                />
-                <label className="form-check-label" htmlFor="rememberMe">
-                  Remember me
-                </label>
-              </div>
-              <a href="#" className="text-decoration-none">
-                Forgot password?
-              </a>
-            </div>
-            <button type="submit" className="btn btn-primary w-100">
-              Continue
-            </button>
-          </form>
-        </div>
+        <AuthForm />
       </div>
     </main>
   );
