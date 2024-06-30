@@ -1,6 +1,5 @@
 .sub-footer-section {
   background: #f7f5f9;
-  /* height: 60vh; */
   padding: 3rem 0;
 }
 
@@ -11,4 +10,108 @@
 
 .subfooter-content-lower img {
   width: 100%;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0px 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-icon {
+  padding: 10px;
+  border-radius: 50%;
+  background: #66666629;
+}
+
+.social-icon i {
+  color: #666;
+}
+
+.invite-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.invite-form input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.invite-form button {
+  padding: 8px 15px;
+  background-color: #8064a2;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #141414;
+}
+
+.footer-bottom-content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-bottom p {
+  padding: 1rem;
+  background: #66666629;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subfooter-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom-content {
+    width: 100%;
+  }
+
+  .footer-bottom-content p {
+    margin: 0;
+    border-radius: 0;
+  }
 }

@@ -61,3 +61,33 @@
 .testimonial-content-img .testimonial-img2 {
   width: 30%;
 }
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-body {
+    padding: 1.5rem !important;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .testimonial-section .card {
+    padding: 0;
+  }
+
+  .testimonial-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-content-img {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .testimonial-content-img img {
+    width: 100% !important;
+  }
+}

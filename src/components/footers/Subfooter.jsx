@@ -13,7 +13,7 @@ const Subfooter = () => {
               <span className="text-secondary">community...</span>
             </h2>
             <button
-              style={{ width: "180px", background: "#8064a2", color: "#fff" }}
+              style={{ width: "180px" }}
               className="btn btn-secondary"
               type="submit"
             >

@@ -15,6 +15,7 @@ const Hero = () => {
               <span className="text-secondary">passion</span>
             </h2>
             <p
+              className="d-lg-flex d-none"
               style={{
                 fontSize: "0.9rem",
                 wordSpacing: "4px",
@@ -31,14 +32,31 @@ const Hero = () => {
               promote yourself, your students, products, services or events. Hop
               on your hobbyhorse and enjoy the ride.
             </p>
+            <p
+              className="d-flex d-lg-none"
+              style={{
+                fontSize: "0.9rem",
+                wordSpacing: "4px",
+                lineHeight: "2rem",
+              }}
+            >
+              Sign-in to interact with a community of fellow hobbyists and an
+              eco-system of experts, teachers, suppliers, classes, workshops,
+              and places to practice, participate or perform.
+            </p>
           </div>
-          <div className="objects d-flex gap-1">
+          <div className="objects d-lg-flex d-none gap-1">
             <img src={object1} alt="" />
             <img src={object2} alt="" />
           </div>
         </div>
 
         <AuthForm />
+
+        <div className="objects d-flex d-lg-none gap-1">
+          <img src={object1} alt="" />
+          <img src={object2} alt="" />
+        </div>
       </div>
     </main>
   );

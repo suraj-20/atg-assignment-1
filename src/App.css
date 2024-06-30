@@ -39,14 +39,15 @@ body {
 
 .btn-secondary {
   border: none;
-  background: #fff;
-  color: #8064a2;
-  font-size: 1.1rem;
+  background: #8064a2;
+  color: #fff;
+  /* font-size: 1.1rem; */
 }
 
 .btn-secondary:hover {
   background: #fff;
-  color: #8064a29e;
+  color: #8064a2;
+  border: 1px solid #8064a2;
 }
 
 .input-bar {
@@ -62,4 +63,10 @@ body {
   color: #fff;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-secondary {
+    width: 130px !important;
+  }
 }

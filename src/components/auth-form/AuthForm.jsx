@@ -5,8 +5,8 @@ function AuthForm() {
   const [isSignIn, setIsSignIn] = useState(true);
 
   return (
-    <div className="container ">
-      <div className="p-4 mx-auto" style={{ maxWidth: "400px" }}>
+    <div className="form-section ">
+      <div className="form-container p-4 mx-auto" style={{ maxWidth: "400px" }}>
         <div className="d-flex justify-content-start mb-3">
           <button
             style={{ textDecoration: "none" }}
@@ -28,10 +28,10 @@ function AuthForm() {
           </button>
         </div>
 
-        <button className="btn btn-outline-primary mb-2 w-100">
+        <button className="btn btn-primary mb-2 w-100">
           Continue with Google
         </button>
-        <button className="btn btn-outline-primary mb-2 w-100">
+        <button className="btn btn-primary mb-2 w-100">
           Continue with Facebook
         </button>
         <div className="d-flex align-items-center my-3">
@@ -41,12 +41,12 @@ function AuthForm() {
         </div>
         <form>
           <div className="mb-3">
-            <input type="email" className="form-control" placeholder="Email" />
+            <input type="email" className="input-bar" placeholder="Email" />
           </div>
           <div className="mb-3 position-relative">
             <input
               type="password"
-              className="form-control"
+              className="input-bar"
               placeholder="Password"
             />
             <span className="position-absolute top-50 end-0 translate-middle-y me-3">
@@ -71,7 +71,7 @@ function AuthForm() {
               )}
             </div>
 
-            <a href="#" className="text-decoration-none">
+            <a href="/" className="text-decoration-none">
               Forgot password?
             </a>
           </div>
@@ -89,7 +89,7 @@ function AuthForm() {
               </label>
             )}
           </p>
-          <button type="submit" className="btn btn-primary w-100">
+          <button type="submit" className="btn btn-secondary w-100">
             {isSignIn ? "Continue" : "Agree and Continue"}
           </button>
         </form>

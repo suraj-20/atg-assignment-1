@@ -5,6 +5,7 @@ import Card from "../../components/cards/Card";
 import AddYourOwnCard from "../../components/cards/AddYourOwnCard";
 import Testimonial from "../../components/testimonials/Testimonial";
 import Subfooter from "../../components/footers/Subfooter";
+import Footer from "../../components/footers/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <AddYourOwnCard />
       <Testimonial />
       <Subfooter />
+      <Footer />
     </div>
   );
 };
