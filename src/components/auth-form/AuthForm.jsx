@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 function AuthForm() {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -16,6 +15,11 @@ function AuthForm() {
             onClick={() => setIsSignIn(true)}
           >
             Sign In
+            {isSignIn ? (
+              <hr className={`${isSignIn ? "underline" : ""}`} />
+            ) : (
+              ""
+            )}
           </button>
           <button
             style={{ textDecoration: "none" }}
@@ -25,6 +29,11 @@ function AuthForm() {
             onClick={() => setIsSignIn(false)}
           >
             Join In
+            {!isSignIn ? (
+              <hr className={`${!isSignIn ? "underline" : ""}`} />
+            ) : (
+              ""
+            )}
           </button>
         </div>
 

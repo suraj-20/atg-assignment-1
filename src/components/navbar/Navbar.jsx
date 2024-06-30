@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/HobbyCue Logo.png";
+import logo2 from "../../assets/HobbyCue Logo v2 2.png";
+import { Link } from "react-router-dom";
+import AuthForm from "../auth-form/AuthForm";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +18,12 @@ const Navbar = () => {
     <header className="header-section">
       <div className="header-container d-flex justify-content-between align-items-center py-4 m-auto position-relative">
         <div className="logo d-flex align-items-center gap-5">
-          <img src={logo} alt="HobbyCue Logo" height={40} />
+          <Link to={"/"} className="desktop-logo d-flex">
+            <img src={logo} alt="HobbyCue Logo" height={40} />
+          </Link>
+          <Link to={"/"} className="mobile-logo">
+            <img src={logo2} alt="HobbyCue Logo" height={40} />
+          </Link>
           <div className="search-bar d-none d-lg-flex align-items-center">
             <input
               type="text"
@@ -86,46 +94,27 @@ const Navbar = () => {
             </button>
           </div>
           <div className="bars d-lg-none">
-            <i
-              style={{ color: "#8064a2", fontSize: "1.2rem" }}
-              className="fa-solid fa-bars"
-              onClick={toggleMenu}
-            ></i>
+            {isOpen ? (
+              <i
+                style={{ color: "#8064a2", fontSize: "1.2rem" }}
+                className="fa-solid fa-close"
+                onClick={toggleMenu}
+              ></i>
+            ) : (
+              <i
+                style={{ color: "#8064a2", fontSize: "1.2rem" }}
+                className="fa-solid fa-bars"
+                onClick={toggleMenu}
+              ></i>
+            )}
           </div>
         </div>
       </div>
 
       {isOpen && (
         <div className="mobile-menu d-lg-none position-absolute">
-          <div className="d-flex flex-column align-items-start p-3 bg-light gap-2">
-            <div className="search-bar d-flex d-lg-none align-items-center">
-              <input
-                type="text"
-                className="input-bar"
-                placeholder="Search here..."
-              />
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <button
-              className="btn btn-secondary d-flex gap-2 align-items-center mb-2"
-              type="button"
-            >
-              <i className="fa-solid fa-compass"></i>
-              Explore
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-            <button
-              className="btn btn-secondary d-flex gap-2 align-items-center mb-2"
-              type="button"
-            >
-              <i className="fa-solid fa-circle-play"></i>
-              Hobbies
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-
-            <button className="btn btn-primary" type="button">
-              Sign In
-            </button>
+          <div className="form-container-in-mobile-menu">
+            <AuthForm />
           </div>
         </div>
       )}

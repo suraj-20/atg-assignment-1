@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AddYourOwnCard = () => {
   return (
@@ -18,13 +19,15 @@ const AddYourOwnCard = () => {
               equipment, venue or event tickets? Or, you know someone who should
               be on hobbycue? Go ahead and Add your Own page Add new
             </p>
-            <button
-              type="submit"
-              style={{ width: "140px" }}
-              className="btn btn-primary"
-            >
-              Add New
-            </button>
+            <Link to={"/add-listing"}>
+              <button
+                type="submit"
+                style={{ width: "140px" }}
+                className="btn btn-primary"
+              >
+                Add New
+              </button>
+            </Link>
           </div>
         </div>
       </div>

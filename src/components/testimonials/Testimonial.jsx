@@ -1,6 +1,7 @@
 import React from "react";
-import image1 from "../../assets/Audio Track.png";
-import image2 from "../../assets/Group 108.png";
+import testimonialUser from "../../assets/Ellipse 12.png";
+import playBtn from "../../assets/play_arrow_black_24dp 1.png";
+import audioTrack from "../../assets/Rectangle 2655.png";
 
 const Testimonial = () => {
   return (
@@ -29,18 +30,35 @@ const Testimonial = () => {
               and I highly recommend it.
             </p>
             <div className="testimonial-content-img d-flex justify-content-between align-items-center">
-              <img
-                className="testimonial-img1"
-                src={image1}
-                alt=""
-                height={90}
-              />
-              <img
-                className="testimonial-img2"
-                src={image2}
-                alt=""
-                height={90}
-              />
+              <div className="play-music-container d-flex align-items-center gap-4">
+                <div
+                  style={{
+                    padding: "7px",
+                    borderRadius: "50%",
+                    background: "#fff",
+                  }}
+                  className="play-btn"
+                >
+                  <img src={playBtn} alt="" />
+                </div>
+                <div className="audio-track">
+                  <img src={audioTrack} alt="" />
+                </div>
+                <div className="testimonials-user">
+                  <img src={testimonialUser} alt="" width={50} height={50} />
+                </div>
+              </div>
+              <div className="testimonial-user d-flex align-items-center gap-3">
+                <img src={testimonialUser} alt="" width={70} height={70} />
+                <div className="name-or-type">
+                  <h5 style={{ margin: "0", color: "#8064a2" }}>
+                    Shubha Nagarajun
+                  </h5>
+                  <p style={{ margin: "0", color: "#1848e8" }}>
+                    Classical Dancer
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
