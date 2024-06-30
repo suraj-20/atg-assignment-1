@@ -61,7 +61,11 @@
   }
 
   .testimonial-user img {
-    width: 20% !important;
+    width: 30% !important;
+  }
+
+  .testimonial-user .name-or-type {
+    text-align: start;
   }
   /* .testimonial-user {
     width: 100%;

@@ -85,4 +85,8 @@ body {
   .btn-secondary {
     width: 130px !important;
   }
+
+  .play-music-container {
+    gap: 0.5rem !important;
+  }
 }

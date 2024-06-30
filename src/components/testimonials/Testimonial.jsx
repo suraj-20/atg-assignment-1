@@ -51,10 +51,10 @@ const Testimonial = () => {
               <div className="testimonial-user d-flex align-items-center gap-3">
                 <img src={testimonialUser} alt="" width={70} height={70} />
                 <div className="name-or-type">
-                  <h5 style={{ margin: "0", color: "#8064a2" }}>
+                  <h6 style={{ margin: "0", color: "#8064a2" }}>
                     Shubha Nagarajun
-                  </h5>
-                  <p style={{ margin: "0", color: "#1848e8" }}>
+                  </h6>
+                  <p style={{ margin: "0", color: "#1848e8", fontSize: "0.9rem" }}>
                     Classical Dancer
                   </p>
                 </div>
